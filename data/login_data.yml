@@ -27,3 +27,7 @@ test_login:
     username: "12344445555"
     password: "123456"
     expect: "账号不存在"
+  test_login_008
+    username: "13800238006"
+    password: "123456"
+    expect: "账号不存在”
