@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.common.by import By
 
 from base.base_action import BaseAction
@@ -13,7 +14,7 @@ class LoginPage(BaseAction):
 
     # 登录
     login_button = By.ID, "com.tpshop.malls:id/btn_login"
-
+    @allure.step(title = "输入用户名")
     def input_username(self, text):
         self.input(self.username_edit_text, text)
 
