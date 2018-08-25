@@ -22,3 +22,11 @@ class LoginPage(BaseAction):
 
     def click_login(self):
         self.click(self.login_button)
+
+    def is_toast_exist(self,message):
+        try:
+            self.find_toast(message)
+            return True
+
+        except Exception:
+            return False
